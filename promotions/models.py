@@ -115,7 +115,7 @@ class PromotionRental:
         self.promotion = promotion
         self.rental_bikes = rental_bikes
         self.total = (sum(rb.total for rb in rental_bikes)
-                      * promotion.discount_pct / 100)
+                      * (100 - promotion.discount_pct) / 100)
 
         if not self.is_promotion_applicable():
             logger.error('Promotion is not applicable.')
