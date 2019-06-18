@@ -1,6 +1,6 @@
 # Logging Setup
 LOG_LEVEL = 'DEBUG'
-LOG_FILENAME = '/home/nothing/warehouse/dev/rental/app/rental.log'
+LOG_FILENAME = './rental.log'
 LOG_FORMAT = '[%(asctime)s] %(name)s %(levelname)s in %(module)s: %(message)s'
 LOGGER_NAME = 'rental_log'
 

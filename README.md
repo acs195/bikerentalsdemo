@@ -26,16 +26,22 @@ When a client takes a promotion, chooses multiple **BikeRental** to be added to 
 
 ---
 
-## Set the environment before starting the application:
-- Create virtual env:
-  `virtualenv env`
-- Activate virtual env:
-  `source env/bin/activate`
-- Install the required packages:
-  `pip install -r requirements.txt`
+# Installation
+  - Clone the repository:
+    `git clone https://github.com/acs195/bikerentalsdemo.git`
 
-## Testing:
-`pytest -v --cov-report term-missing --cov-fail-under=85 --cov=. .`
+## Set the environment before starting the application:
+  - Create virtual env:
+    `virtualenv env`
+  - Activate virtual env:
+    `source env/bin/activate`
+  - Enter the application folder:
+    `cd bikerentalsdemo`
+  - Install the required packages:
+    `pip install -r requirements.txt`
+
+## Run test cases:
+  `pytest -v --cov-report term-missing --cov-fail-under=85 --cov=. .`
 
 ## Run the application:
-`python app/app.py`
+  `python app.py`
